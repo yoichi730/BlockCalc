@@ -1,0 +1,8 @@
+c:\users\anton\documents\visual studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\obj\Debug\TestBlockCalc_2.csprojResolveAssemblyReference.cache
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\bin\Debug\TestBlockCalc_2.dll
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\bin\Debug\TestBlockCalc_2.pdb
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\bin\Debug\BlockCalc_2.exe
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\bin\Debug\BlockCalc_2.pdb
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\obj\Debug\TestBlockCalc_2.dll
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\obj\Debug\TestBlockCalc_2.pdb
