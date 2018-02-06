@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BlockCalc_2
 {
@@ -11,31 +7,24 @@ namespace BlockCalc_2
         static void Main(string[] args)
         {
 
-            _Expression expr = new _Expression();
+            My_Expression expr = new My_Expression();
+            
             if (args.Length == 0)
             {
                 Console.WriteLine("Калькулятор");
-                Console.Write("Введите выражение (SUM/SUB/DIV/MUL): ");
-                string _oper = Console.ReadLine();
+                Console.Write("Введите выражение[OPERATOR X1,X2,..,Xn]: ");
+                String inputStream = Console.ReadLine();
 
-                Console.Write("Введите первую переменную: ");
-                double X = Convert.ToDouble(Console.ReadLine());
-
-                Console.Write("Введите вторую переменную: ");
-                double Y = Convert.ToDouble(Console.ReadLine());
-
-                expr.getAnswer(_oper, X, Y); 
+                Console.WriteLine(expr.getAnswer(inputStream));
+                Console.ReadKey();
             }
             else
             {
-                expr.getAnswer(args[0], Convert.ToDouble(args[1]), Convert.ToDouble(args[2]));
+                String inputStream = Convert.ToString(args[0]) + ' ' + Convert.ToString(args[1]);
+                Console.WriteLine( expr.getAnswer(inputStream) );
+                Console.ReadKey();
             }
-
-
+               
         }
-
-
-
-
     }
 }

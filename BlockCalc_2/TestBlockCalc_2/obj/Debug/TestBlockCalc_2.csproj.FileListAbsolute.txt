@@ -6,3 +6,5 @@ C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2
 C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\bin\Debug\BlockCalc_2.pdb
 C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\obj\Debug\TestBlockCalc_2.dll
 C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\obj\Debug\TestBlockCalc_2.pdb
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\bin\Debug\ITUniver.Calc.Core.dll
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\TestBlockCalc_2\bin\Debug\ITUniver.Calc.Core.pdb
