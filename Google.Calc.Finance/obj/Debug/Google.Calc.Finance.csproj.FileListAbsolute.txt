@@ -1,0 +1,7 @@
+D:\_project\BlockCalc\Google.Calc.Finance\bin\Debug\Google.Calc.Finance.dll
+D:\_project\BlockCalc\Google.Calc.Finance\bin\Debug\Google.Calc.Finance.pdb
+D:\_project\BlockCalc\Google.Calc.Finance\bin\Debug\ITUniver.Calc.Core.dll
+D:\_project\BlockCalc\Google.Calc.Finance\bin\Debug\ITUniver.Calc.Core.pdb
+D:\_project\BlockCalc\Google.Calc.Finance\obj\Debug\Google.Calc.Finance.csprojResolveAssemblyReference.cache
+D:\_project\BlockCalc\Google.Calc.Finance\obj\Debug\Google.Calc.Finance.dll
+D:\_project\BlockCalc\Google.Calc.Finance\obj\Debug\Google.Calc.Finance.pdb

@@ -7,92 +7,61 @@ namespace TestBlockCalc_2
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod_SUM1()
+        public void TestMethod_SUM()
         {
             //Arrange
-            _Expression exp = new _Expression();
-            exp.x = 10;
-            exp.y = 30;
-
+            My_Expression exp = new My_Expression();
+            double[] arguments = { 10, 5, 3, 2, 5 };
+            
             //Act
-            double res = exp.SUM();
+            double res = exp.SUM(5, arguments);
 
             //Assert
-            Assert.AreEqual(exp.x+exp.y, res);
+            Assert.AreEqual(25, res);
         }
 
-        public void TestMethod_SUB()
-        {
-            //Arrange
-            _Expression exp2 = new _Expression();
-            exp2.x = 10;
-            exp2.y = 30;
-
-            //Act
-            double res = exp2.SUB();
-
-            //Assert
-            Assert.AreEqual(exp2.x - exp2.y, res);
-        }
-
-        public void TestMethod_MUL()
-        {
-            //Arrange
-            _Expression exp = new _Expression();
-            exp.x = 10;
-            exp.y = 30;
-
-            //Act
-            double res = exp.MUL();
-
-            //Assert
-            Assert.AreEqual(exp.x * exp.y, res);
-        }
-        public void TestMethod_DIV()
-        {
-            //Arrange
-            _Expression exp = new _Expression();
-            exp.x = 10;
-            exp.y = 30;
-
-            //Act
-            double res = exp.DIV();
-
-            //Assert
-            Assert.AreEqual(exp.x / exp.y, res);
-        }
-
-        public void TestMethod_DIV_Y0()
-        {
-            //Arrange
-            _Expression exp = new _Expression();
-            exp.x = 10;
-            exp.y = 0;
-
-            //Act
-            int err = exp.getErrCode();
-
-            //Assert
-            Assert.AreEqual(1, err);
-        }
-
-    }
-    public class UnitTest2
-    {
         [TestMethod]
         public void TestMethod_SUB()
         {
             //Arrange
-            _Expression exp = new _Expression();
-            exp.x = 10;
-            exp.y = 30;
+            My_Expression exp = new My_Expression();
+            double[] arguments = { 10, 5, 3, 2, 5 };
 
             //Act
-            double res = exp.SUB();
+            double res = exp.SUB(5, arguments);
 
             //Assert
-            Assert.AreEqual(exp.x - exp.y, res);
+            Assert.AreEqual(-5, res);
         }
+
+        [TestMethod]
+        public void TestMethod_DIV()
+        {
+            //Arrange
+            My_Expression exp = new My_Expression();
+            double[] arguments = { 10, 5, 2 };
+
+            //Act
+            double res = exp.DIV(3, arguments);
+
+            //Assert
+            Assert.AreEqual(1, res);
+        }
+
+        [TestMethod]
+        public void TestMethod_MUL()
+        {
+            //Arrange
+            My_Expression exp = new My_Expression();
+            double[] arguments = { 10, 5, 2 };
+
+            //Act
+            double res = exp.MUL(3, arguments);
+
+            //Assert
+            Assert.AreEqual(100, res);
+        }
+
     }
 
 }

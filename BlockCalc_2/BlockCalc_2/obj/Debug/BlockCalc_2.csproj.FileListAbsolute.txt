@@ -4,3 +4,5 @@ c:\users\anton\documents\visual studio 2015\Projects\BlockCalc_2\BlockCalc_2\bin
 c:\users\anton\documents\visual studio 2015\Projects\BlockCalc_2\BlockCalc_2\obj\Debug\BlockCalc_2.exe
 c:\users\anton\documents\visual studio 2015\Projects\BlockCalc_2\BlockCalc_2\obj\Debug\BlockCalc_2.pdb
 C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\BlockCalc_2\obj\Debug\BlockCalc_2.csprojResolveAssemblyReference.cache
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\BlockCalc_2\bin\Debug\ITUniver.Calc.Core.dll
+C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockCalc_2\BlockCalc_2\bin\Debug\ITUniver.Calc.Core.pdb

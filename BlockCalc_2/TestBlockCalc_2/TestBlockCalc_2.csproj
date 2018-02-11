@@ -58,6 +58,13 @@
       <Project>{f3a3714d-fe24-47b6-ba0f-79dda7c162da}</Project>
       <Name>BlockCalc_2</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ITUniver.Calc.Core\ITUniver.Calc.Core.csproj">
+      <Project>{568cc6da-0c2b-4d04-93a5-4fb5ac728e18}</Project>
+      <Name>ITUniver.Calc.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Operation\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

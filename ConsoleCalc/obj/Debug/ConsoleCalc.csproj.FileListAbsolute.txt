@@ -1,6 +1,0 @@
-D:\_project\BlockCalc\ConsoleCalc\bin\Debug\ConsoleCalc.exe.config
-D:\_project\BlockCalc\ConsoleCalc\bin\Debug\ConsoleCalc.exe
-D:\_project\BlockCalc\ConsoleCalc\bin\Debug\ConsoleCalc.pdb
-D:\_project\BlockCalc\ConsoleCalc\obj\Debug\ConsoleCalc.csprojResolveAssemblyReference.cache
-D:\_project\BlockCalc\ConsoleCalc\obj\Debug\ConsoleCalc.exe
-D:\_project\BlockCalc\ConsoleCalc\obj\Debug\ConsoleCalc.pdb
