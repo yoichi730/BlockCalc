@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Operation\POWoperation.cs" />
     <Compile Include="Operation\MUL_operation.cs" />
     <Compile Include="Operation\DIV_operation.cs" />
     <Compile Include="Operation\SUB_operation.cs" />

@@ -1,13 +1,39 @@
-﻿using ITUniver.Calc.Core.Operation;
+﻿using ITUniver.Calc.Core.Interfaces;
+using ITUniver.Calc.Core.Operation;
 using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 
 namespace BlockCalc_2
-{
+{ 
+    
     public class My_Expression
     {
-        public static int argCount = 0;
+        private IList<IOperation> operations { get; set; }
 
-        private static string[] operations = {"SUM","SUB","DIV","MUL"};      
+        public My_Expression()
+        {
+            operations = new List<IOperation>();
+
+            // Загружаем наши операции
+            LoadOperation(Assembly.GetExecutingAssembly());
+
+            // Загружаем сторонние библиотеки с операциями
+            var extensionsDir = Path.Combine(Environment.CurrentDirectory, "Extensions");
+
+            if (!Directory.Exists(extensionsDir))
+                return;
+
+            var files = Directory.GetFiles(extensionsDir, "*.dll");
+
+            foreach (var file in files)
+            {
+                LoadOperation(Assembly.LoadFile(file));
+            }
+
+        }
 
         public double SUM (int argCount, double[] arguments)
         {
@@ -37,37 +63,85 @@ namespace BlockCalc_2
             return result;
         }
 
-        public string getAnswer(string inputStream)
-        {            
-            String[] inputExpression = inputStream.Split(',', ' ');
-            for (int i = 0; i < inputExpression.Length; i++)
+        public double Exec(string oper, double[] args)
+        {
+            // найти операцию в списке
+            var operation = operations
+                .FirstOrDefault(o => o.Name == oper);
+
+            // если не найдено - возвращает ошибку
+            if (operation == null)
+                return double.NaN;
+
+            // если нашли
+            // передаем ей аргументы и вычисляем результат
+            var result = operation.Exec(args);
+
+            // возвращаем результат
+            return result;
+        }
+
+        public string[] GetOperNames()
+        {
+            //string[] res = {"SUM","SUB"};
+            //return res;
+            return operations.Select(it => it.Name).ToArray();
+        }
+
+        public string ArgumentsToString(double[] args, char ch)
+
+        {
+            string res = "";
+
+            for (int i = 0; i < args.Length; i++)
             {
-                if (inputExpression[0] == operations[i])
+                res += $"{args[i]}";
+                if (i != args.Length-1)
                 {
-                    My_Expression exp = new My_Expression();
-                    // создаем массив сторк для хранения аргументов
-                    double[] args = new double[inputExpression.Length - 1];
-                    //конвертируем его в double[] и начинаем формировать ответ
-                    string answer = $"{inputExpression[0]}(";
-                    for (int j = 0; j < args.Length; j++)
-                    {
-                        args[j] = Convert.ToDouble(inputExpression[j + 1]);
-                        answer += inputExpression[j + 1] + ',';
-                    }
-                    
-                    if (inputExpression[0] == "SUM") return answer += $") = {exp.SUM(args.Length, args)}";
-                    if (inputExpression[0] == "SUB") return answer += $") = {exp.SUB(args.Length, args)}";
-                    if (inputExpression[0] == "DIV") return answer += $") = {exp.DIV(args.Length, args)}";
-                    if (inputExpression[0] == "MUL") return answer += $") = {exp.MUL(args.Length, args)}";
+                    res += $"{ch}";
                 }
             }
-            return "Неизвестный оператор";
 
+            return res;
         }
 
-        public string[] getOperations()
+        public string print(string oper, double[] args)
         {
-            return operations;
+            string Answer = $"{oper} ";
+
+            My_Expression expr = new My_Expression();
+            
+            Answer += $"({expr.ArgumentsToString(args,',')}) = {expr.Exec(oper,args)}";
+
+            return Answer;
         }
+
+        private void LoadOperation(Assembly assembly)
+        {
+            var types = assembly.GetTypes();
+            var typeOperation = typeof(IOperation);
+
+            foreach (var item in types.Where(t => !t.IsAbstract && !t.IsInterface))
+            {
+                var interfaces = item.GetInterfaces();
+
+                var isOperation = interfaces.Any(it => it == typeOperation);
+
+                if (isOperation)
+                {
+                    // создаем эксземпляр объекта
+                    var obj = Activator.CreateInstance(item);
+                    // пытаемся превратить его в операцию
+                    var operation = obj as IOperation;
+                    // если удалось
+                    if (operation != null)
+                    {
+                        // добавляем в список операций
+                        operations.Add(operation);
+                    }
+                }
+            }
+        }
+
     }
 }

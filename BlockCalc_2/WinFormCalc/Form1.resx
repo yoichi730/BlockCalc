@@ -175,7 +175,7 @@
     <value>438, 32</value>
   </data>
   <data name="cbOperators.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;cbOperators.Name" xml:space="preserve">
     <value>cbOperators</value>
@@ -189,24 +189,6 @@
   <data name="&gt;&gt;cbOperators.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnMyLucky.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="btnMyLucky.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="btnMyLucky.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="btnMyLucky.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 36</value>
-  </data>
-  <data name="btnMyLucky.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnMyLucky.Text" xml:space="preserve">
-    <value>Мне повезет</value>
-  </data>
   <data name="&gt;&gt;btnMyLucky.Name" xml:space="preserve">
     <value>btnMyLucky</value>
   </data>
@@ -219,54 +201,6 @@
   <data name="&gt;&gt;btnMyLucky.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnClear.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnClear.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 13</value>
-  </data>
-  <data name="btnClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 36</value>
-  </data>
-  <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnClear.Text" xml:space="preserve">
-    <value>Очистить</value>
-  </data>
-  <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
-    <value>btnClear</value>
-  </data>
-  <data name="&gt;&gt;btnClear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnClear.Parent" xml:space="preserve">
-    <value>ButtonBox</value>
-  </data>
-  <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnResult.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="btnResult.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 13</value>
-  </data>
-  <data name="btnResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 36</value>
-  </data>
-  <data name="btnResult.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnResult.Text" xml:space="preserve">
-    <value>Результат</value>
-  </data>
   <data name="&gt;&gt;btnResult.Name" xml:space="preserve">
     <value>btnResult</value>
   </data>
@@ -277,16 +211,13 @@
     <value>ButtonBox</value>
   </data>
   <data name="&gt;&gt;btnResult.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="ButtonBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
-  <data name="ButtonBox.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="ButtonBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 200</value>
+    <value>0, 271</value>
   </data>
   <data name="ButtonBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>444, 61</value>
@@ -306,6 +237,78 @@
   <data name="&gt;&gt;ButtonBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btnMyLucky.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnMyLucky.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="btnMyLucky.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="btnMyLucky.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 36</value>
+  </data>
+  <data name="btnMyLucky.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnMyLucky.Text" xml:space="preserve">
+    <value>Мне повезет</value>
+  </data>
+  <data name="&gt;&gt;btnMyLucky.Name" xml:space="preserve">
+    <value>btnMyLucky</value>
+  </data>
+  <data name="&gt;&gt;btnMyLucky.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMyLucky.Parent" xml:space="preserve">
+    <value>ButtonBox</value>
+  </data>
+  <data name="&gt;&gt;btnMyLucky.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnResult.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="btnResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 13</value>
+  </data>
+  <data name="btnResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 36</value>
+  </data>
+  <data name="btnResult.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnResult.Text" xml:space="preserve">
+    <value>Результат</value>
+  </data>
+  <data name="&gt;&gt;btnResult.Name" xml:space="preserve">
+    <value>btnResult</value>
+  </data>
+  <data name="&gt;&gt;btnResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnResult.Parent" xml:space="preserve">
+    <value>ButtonBox</value>
+  </data>
+  <data name="&gt;&gt;btnResult.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbHistory.Name" xml:space="preserve">
+    <value>lbHistory</value>
+  </data>
+  <data name="&gt;&gt;lbHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbHistory.Parent" xml:space="preserve">
+    <value>gbResult</value>
+  </data>
+  <data name="&gt;&gt;lbHistory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;tbResult.Name" xml:space="preserve">
     <value>tbResult</value>
   </data>
@@ -316,7 +319,7 @@
     <value>gbResult</value>
   </data>
   <data name="&gt;&gt;tbResult.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="gbResult.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -325,7 +328,7 @@
     <value>0, 124</value>
   </data>
   <data name="gbResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>444, 76</value>
+    <value>444, 147</value>
   </data>
   <data name="gbResult.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -345,6 +348,30 @@
   <data name="&gt;&gt;gbResult.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="lbHistory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lbHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 45</value>
+  </data>
+  <data name="lbHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>438, 99</value>
+  </data>
+  <data name="lbHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lbHistory.Name" xml:space="preserve">
+    <value>lbHistory</value>
+  </data>
+  <data name="&gt;&gt;lbHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbHistory.Parent" xml:space="preserve">
+    <value>gbResult</value>
+  </data>
+  <data name="&gt;&gt;lbHistory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tbResult.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -361,7 +388,7 @@
     <value>438, 29</value>
   </data>
   <data name="tbResult.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;tbResult.Name" xml:space="preserve">
     <value>tbResult</value>
@@ -373,42 +400,42 @@
     <value>gbResult</value>
   </data>
   <data name="&gt;&gt;tbResult.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="mtbArguments.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="tbArguments.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="mtbArguments.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="tbArguments.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <data name="mtbArguments.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tbArguments.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
+  </data>
+  <data name="tbArguments.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 16</value>
   </data>
-  <data name="mtbArguments.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tbArguments.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 10</value>
   </data>
-  <data name="mtbArguments.Mask" xml:space="preserve">
-    <value>00000000000000000000000000000000000000</value>
-  </data>
-  <data name="mtbArguments.PromptChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="mtbArguments.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tbArguments.Size" type="System.Drawing.Size, System.Drawing">
     <value>438, 29</value>
   </data>
-  <data name="mtbArguments.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="tbArguments.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;mtbArguments.Name" xml:space="preserve">
-    <value>mtbArguments</value>
+  <data name="tbArguments.Text" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;mtbArguments.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tbArguments.Name" xml:space="preserve">
+    <value>tbArguments</value>
   </data>
-  <data name="&gt;&gt;mtbArguments.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tbArguments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbArguments.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;mtbArguments.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tbArguments.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -438,6 +465,9 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -445,7 +475,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>444, 261</value>
+    <value>444, 332</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>500, 400</value>
@@ -458,6 +488,12 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Калькулятор</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormCalc</value>

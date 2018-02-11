@@ -13,15 +13,13 @@ namespace BlockCalc_2
             {
                 Console.WriteLine("Калькулятор");
                 Console.Write("Введите выражение[OPERATOR X1,X2,..,Xn]: ");
-                String inputStream = Console.ReadLine();
-
-                Console.WriteLine(expr.getAnswer(inputStream));
+                string inputStream = Console.ReadLine();
+                
                 Console.ReadKey();
             }
             else
             {
-                String inputStream = Convert.ToString(args[0]) + ' ' + Convert.ToString(args[1]);
-                Console.WriteLine( expr.getAnswer(inputStream) );
+                string inputStream = Convert.ToString(args[0]) + ' ' + Convert.ToString(args[1]);
                 Console.ReadKey();
             }
                

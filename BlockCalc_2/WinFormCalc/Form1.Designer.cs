@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalc));
             this.gbOperator = new System.Windows.Forms.GroupBox();
             this.cbOperators = new System.Windows.Forms.ComboBox();
             this.ButtonBox = new System.Windows.Forms.GroupBox();
             this.btnMyLucky = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.btnResult = new System.Windows.Forms.Button();
             this.gbResult = new System.Windows.Forms.GroupBox();
+            this.lbHistory = new System.Windows.Forms.ListBox();
             this.tbResult = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.mtbArguments = new System.Windows.Forms.MaskedTextBox();
+            this.tbArguments = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.gbOperator.SuspendLayout();
             this.ButtonBox.SuspendLayout();
             this.gbResult.SuspendLayout();
@@ -55,15 +57,12 @@
             // cbOperators
             // 
             resources.ApplyResources(this.cbOperators, "cbOperators");
-            this.cbOperators.FormattingEnabled = true;
             this.cbOperators.Name = "cbOperators";
-            this.cbOperators.SelectedValueChanged += new System.EventHandler(this.cbOperators_SelectedValueChanged);
-            this.cbOperators.EnabledChanged += new System.EventHandler(this.cbOperators_EnabledChanged);
+            this.cbOperators.SelectedIndexChanged += new System.EventHandler(this.cbOperators_SelectedIndexChanged);
             // 
             // ButtonBox
             // 
             this.ButtonBox.Controls.Add(this.btnMyLucky);
-            this.ButtonBox.Controls.Add(this.btnClear);
             this.ButtonBox.Controls.Add(this.btnResult);
             resources.ApplyResources(this.ButtonBox, "ButtonBox");
             this.ButtonBox.Name = "ButtonBox";
@@ -77,14 +76,6 @@
             this.btnMyLucky.UseVisualStyleBackColor = true;
             this.btnMyLucky.Click += new System.EventHandler(this.btnMyLucky_Click);
             // 
-            // btnClear
-            // 
-            resources.ApplyResources(this.btnClear, "btnClear");
-            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Name = "btnClear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
             // btnResult
             // 
             resources.ApplyResources(this.btnResult, "btnResult");
@@ -96,10 +87,20 @@
             // 
             // gbResult
             // 
+            this.gbResult.Controls.Add(this.lbHistory);
             this.gbResult.Controls.Add(this.tbResult);
             resources.ApplyResources(this.gbResult, "gbResult");
             this.gbResult.Name = "gbResult";
             this.gbResult.TabStop = false;
+            // 
+            // lbHistory
+            // 
+            this.lbHistory.BackColor = System.Drawing.SystemColors.Window;
+            this.lbHistory.CausesValidation = false;
+            this.lbHistory.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.lbHistory, "lbHistory");
+            this.lbHistory.FormattingEnabled = true;
+            this.lbHistory.Name = "lbHistory";
             // 
             // tbResult
             // 
@@ -109,19 +110,22 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.mtbArguments);
+            this.groupBox1.Controls.Add(this.tbArguments);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // mtbArguments
+            // tbArguments
             // 
-            resources.ApplyResources(this.mtbArguments, "mtbArguments");
-            this.mtbArguments.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
-            this.mtbArguments.Name = "mtbArguments";
-            this.mtbArguments.ReadOnly = true;
-            this.mtbArguments.Tag = "";
-            this.mtbArguments.TextChanged += new System.EventHandler(this.mtbArguments_TextChanged);
+            resources.ApplyResources(this.tbArguments, "tbArguments");
+            this.tbArguments.Name = "tbArguments";
+            this.tbArguments.TextChanged += new System.EventHandler(this.tbArguments_TextChanged);
+            this.tbArguments.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbArguments_KeyDown);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FormCalc
             // 
@@ -152,11 +156,12 @@
         private System.Windows.Forms.GroupBox gbResult;
         private System.Windows.Forms.ComboBox cbOperators;
         private System.Windows.Forms.Button btnMyLucky;
-        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnResult;
         private System.Windows.Forms.TextBox tbResult;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.MaskedTextBox mtbArguments;
+        private System.Windows.Forms.TextBox tbArguments;
+        private System.Windows.Forms.ListBox lbHistory;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
