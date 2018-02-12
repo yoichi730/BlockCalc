@@ -1,4 +1,5 @@
-﻿using ITUniver.Calc.DB.Models;
+﻿using ITUniver.Calc.Core.Interfaces;
+using ITUniver.Calc.DB.Models;
 using System.Collections.Generic;
 
 
@@ -8,7 +9,7 @@ namespace ITUniver.Calc.DB.Repositories
     {
     }
 
-    public interface IOperationRepository : IBaseRepository<Operation>
+    public interface IOperationRepository : IBaseRepository<IOperation>
     {
     }
 }
