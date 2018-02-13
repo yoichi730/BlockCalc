@@ -160,13 +160,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CalcController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OperationsController.cs" />
+    <Compile Include="Extensions\Helper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Operations.cs" />
+    <Compile Include="Models\OperationModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +184,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="App_Code\MyHelper.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -210,6 +212,13 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Operations\index.cshtml" />
+    <Content Include="Views\Shared\DisplayTeamplates\Int64.cshtml" />
+    <Content Include="Views\Shared\DisplayTeamplates\DataTime.cshtml" />
+    <Content Include="Views\Shared\DisplayTeamplates\Operation.cshtml" />
+    <Content Include="Views\Calc\Index.cshtml" />
+    <Content Include="Views\Shared\DisplayTeamplates\Args.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Args.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Operation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -230,6 +239,10 @@
     <ProjectReference Include="..\ITUniver.Calc.Core\ITUniver.Calc.Core.csproj">
       <Project>{568cc6da-0c2b-4d04-93a5-4fb5ac728e18}</Project>
       <Name>ITUniver.Calc.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITUniver.Calc.DB\ITUniver.Calc.DB.csproj">
+      <Project>{ea765e13-6dff-461d-b906-ec0a4bceb654}</Project>
+      <Name>ITUniver.Calc.DB</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

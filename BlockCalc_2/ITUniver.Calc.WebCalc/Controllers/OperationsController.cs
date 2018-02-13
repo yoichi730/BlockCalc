@@ -1,26 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using ITUniver.Calc.Core.Operation;
 using System.Web.Mvc;
-using ITUniver.Calc.WebCalc.Models;
+using ITUniver.Calc.DB.Models;
 
-namespace ITUniver.Calc.WebCalc.Controllers
+namespace WebCalc.Controllers
 {
-    public class OperationsController : Controller
+    public class OperationController : Controller
     {
+        // GET: Operation
         public ActionResult Index()
         {
-            var oper = new _Operations();
-            var args = new double[2] { 10, 30 };
-            oper.Exec(args);
+            var operations = new List<Operation>()
+            {
+                new Operation() { Id = 1, ArgsCount = 2, Name = "sum", Owner = "ituniver", CreationDate = DateTime.Now },
+                new Operation() { Id = 1, ArgsCount = 2, Name = "sub", Owner = "ituniver", CreationDate = DateTime.Now },
+                new Operation() { Id = 1, ArgsCount = 2, Name = "div", Owner = "ituniver", CreationDate = DateTime.Now },
+                new Operation() { Id = 1, ArgsCount = 2, Name = "pow", Owner = "ituniver", CreationDate = DateTime.Now },
+                new Operation() { Id = 1, ArgsCount = 2, Name = "credit", Owner = "ituniver", CreationDate = DateTime.Now },
+            };
 
-            return View(oper);
+            return View(operations);
         }
-
-        
     }
 }

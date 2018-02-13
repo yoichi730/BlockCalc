@@ -35,6 +35,7 @@ namespace BlockCalc_2
 
         }
 
+        
         public double SUM (int argCount, double[] arguments)
         {
             var oper = new SUM();

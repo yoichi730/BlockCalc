@@ -1,0 +1,13 @@
+﻿
+@model IEnumerable<double>
+
+@{ 
+    var str = Model !=null ? string.Join(" ",Model) : "";
+}
+
+@for (int i = 0; i < 2; i++)
+{
+    @Html.TextBox("[]","")
+}
+
+@Html.TextBox("", str)
