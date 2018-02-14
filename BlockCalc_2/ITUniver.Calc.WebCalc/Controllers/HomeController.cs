@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace ITUniver.Calc.WebCalc.Controllers
+namespace WebCalc.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -16,15 +13,22 @@ namespace ITUniver.Calc.WebCalc.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
+          
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Contact(long id, string name)
         {
-            ViewBag.Message = "Your contact page.";
-
+            ViewData["Id"] = id;
+            ViewBag.Namesfsdfsd = name;
+            ViewBag.Message = $"Your contact page. {id} {name}";
             return View();
         }
+
+        public ActionResult Empty(long id)
+        {
+            return Content($"id={id}");
+        }
+
     }
 }

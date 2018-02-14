@@ -35,7 +35,12 @@ namespace BlockCalc_2
 
         }
 
-        
+        public IOperation[] GetOpers()
+        {
+            return operations.ToArray();
+        }
+
+
         public double SUM (int argCount, double[] arguments)
         {
             var oper = new SUM();

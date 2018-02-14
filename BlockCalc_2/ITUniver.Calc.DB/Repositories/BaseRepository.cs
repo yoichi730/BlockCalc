@@ -11,8 +11,8 @@ namespace ITUniver.Calc.DB.Repositories
         where T : class, IEntity
     {
         // todo: вынести в конфиг
+        protected string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Anton\Documents\visual studio 2015\Projects\BlockCalc_2\ITUniver.Calc.DB\App_Data\CalcDB.mdf; Integrated Security=True";
 
-        protected string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Anton\Documents\Visual Studio 2015\Projects\BlockchainCalculator-MVC\ITUniver.Calc.DB\App_Data\CalcDB.mdf;Integrated Security=True";
         //protected string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\BlockchainCalculator\ITUniver.Calc.DB\App_Data\CalcDB.mdf;Integrated Security=True";
 
         protected string tableName { get; set; }
